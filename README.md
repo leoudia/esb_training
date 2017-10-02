@@ -32,10 +32,10 @@ localhost:5000/**resttest**/v1/post?p=1&m=2
 
 Contexto da API cadastrada, a partir desse contexto é gerado uma rota para cada API do barramento.
 
-http://localhost:5000/resttest/**v1**/post?p=1&m=2
+localhost:5000/resttest/**v1**/post?p=1&m=2
 
 Versão da API, com esse parâmetro permite uma melhor gestão das APIs no barramento, ou seja, podemos ter uma versão da sua API para uma versão específica do seu aplicativo mobile sem quebrar uma versão anterior devido a alguma feature que alterou o comportamento da API.
 
-http://localhost:5000/resttest/v1/**post**?p=1&m=2
+localhost:5000/resttest/v1/**post**?p=1&m=2
 
 Recurso desejado na API de destino.
