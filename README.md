@@ -28,7 +28,7 @@ Conforme o exemplo acima, publicamos uma api e iremos consumir a mesma a partir 
 
 curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"esb": "first api", "id": 1, "public": true}'  http://localhost:5000/resttest/v1/post?p=1&m=2
 
-http://localhost:5000/**resttest**/v1/post?p=1&m=2
+localhost:5000/resttest/v1/post?p=1&m=2
 
 Contexto da API cadastrada, a partir desse contexto é gerado uma rota para cada API do barramento.
 
