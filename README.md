@@ -10,9 +10,11 @@ Publicando as APIs
 -------
 Para registrar uma API no barramento, basta realizar uma chamada POST conforme o exemplo abaixo:
 
-: curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"ApiName": "resttest", "Version": "v1", "Method": "POST", "Endpoint": "https://httpbin.org/post"}'  http://localhost:5000/api/Endpoint
+
+curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"ApiName": "resttest", "Version": "v1", "Method": "POST", "Endpoint": "https://httpbin.org/post"}'  http://localhost:5000/api/Endpoint
 
 **Body - JSON**
+
 {
   "ApiName": "Contexto da API",
   "Version": "Versão",
@@ -23,7 +25,8 @@ Para registrar uma API no barramento, basta realizar uma chamada POST conforme o
 Consumindo as APIs
 -------
 Conforme o exemplo acima, publicamos uma api e iremos consumir a mesma a partir do barramento de serviço, exemplo:
-:  curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"esb": "first api", "id": 1, "public": true}'  http://localhost:5000/resttest/v1/post?p=1&m=2
+
+curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"esb": "first api", "id": 1, "public": true}'  http://localhost:5000/resttest/v1/post?p=1&m=2
 
 http://localhost:5000/**resttest**/v1/post?p=1&m=2
 
