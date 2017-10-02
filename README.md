@@ -39,3 +39,32 @@ Versão da API, com esse parâmetro permite uma melhor gestão das APIs no barra
 localhost:5000/resttest/v1/**post**?p=1&m=2
 
 Recurso desejado na API de destino.
+
+Manipulando Requisições com MiddleHandle
+-------
+
+É possível interceptar requisições HTTP ou até negá-las com MiddleHandle.
+
+**IMiddleHandle**
+
+bool CanHandle(ESBContext context, out string msg, out int code);
+
+Através desse metódo é possível implementar uma regra de negócio que decidira se a requisição pode ser aceita.
+Dessa forma é possível criar um estrutura de segurança para aceitar requisições de usuários que tenha permissão para
+acessar o recurso específicado na requisição.
+
+void RequestInterceptor(ESBContext context);
+
+Esse metodo é invocado antes que a requisção seja despachada. Pode ser utilizado para adicionar alguma informação no header
+da requisição, modificar o payload da requisição e etc.
+
+void ResponseInterceptor(ESBContext context);
+
+Quando a resposta chega da API que contém o recurso desejado, é chamado esse metódo antes de responder para o
+para a aplição que solicitou o barramento.
+
+**Registrando o IMiddleHandle**
+
+Para registrar o handle customizado, basta utilizar o factory "ESBFactory" e chamar o metódo "RegisterMiddle" passando o handle como parâmetro.
+
+ESBFactory.Instance.RegisterMiddle(...)
