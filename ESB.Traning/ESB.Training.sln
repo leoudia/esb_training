@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESB.Training", "ESB.Traning\ESB.Training.csproj", "{CEA2BC7F-8FE9-41CA-B5CC-CF26A97D1972}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESB.Training.Test", "ESB.Training.Test\ESB.Training.Test.csproj", "{EC730F99-6A39-404A-A69F-DE73FBCFF1B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEA2BC7F-8FE9-41CA-B5CC-CF26A97D1972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA2BC7F-8FE9-41CA-B5CC-CF26A97D1972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEA2BC7F-8FE9-41CA-B5CC-CF26A97D1972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA2BC7F-8FE9-41CA-B5CC-CF26A97D1972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC730F99-6A39-404A-A69F-DE73FBCFF1B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC730F99-6A39-404A-A69F-DE73FBCFF1B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC730F99-6A39-404A-A69F-DE73FBCFF1B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC730F99-6A39-404A-A69F-DE73FBCFF1B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
