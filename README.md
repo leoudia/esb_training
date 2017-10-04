@@ -60,8 +60,7 @@ da requisição, modificar o payload da requisição e etc.
 
 void ResponseInterceptor(ESBContext context);
 
-Quando a resposta chega da API que contém o recurso desejado, é chamado esse metódo antes de responder para o
-para a aplição que solicitou o barramento.
+Quando a resposta chega da API que contém o recurso desejado, é chamado esse metódo antes de responder para a aplição que solicitou o barramento.
 
 **Registrando o IMiddleHandle**
 
